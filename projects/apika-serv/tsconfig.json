@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "target": "es2017",
+    "experimentalDecorators": true,
+    "incremental": true,
+    "outDir": "../../dist/apika/serv",
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": false,
+    "strictPropertyInitialization": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
