@@ -55,6 +55,28 @@ export class Api extends Apika<ApiControllers> {
 TODO
 ```
 
+## Req
+
+Render template if status is `Succeed`:
+
+```html
+<div *req="loadAllReq.status">
+  ...
+</div>
+```
+
+You can provide custom views for `Ongoing` and `Failed` statuses:
+
+```typescript
+{
+  provide: ApikaReqOngoing,
+  useValue: LoadingSpinnerComponent,
+},
+{
+  provide: ApikaReqFailed,
+  useValue: LoadingErrorComponent,
+}
+```
 
 # TODO
 
@@ -62,4 +84,9 @@ TODO
 * README
   * ReqOutlet demo
   * tsconfig paths demo
+  * Controller demo
+  * Auth demo
+  * zod demo
+  * Prisma demo
+  * err
 * tests
